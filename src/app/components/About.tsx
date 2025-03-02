@@ -22,14 +22,14 @@ export default function About() {
           />
         </div>
         <div className='md:w-1/3 w-full space-y-5'>
-          <h2 className='subheading'>Hi, I'm Uunatii from Ware.</h2>
+          <h2 className='subheading'>{`Hi, I'm Uunatii from Ware.`}</h2>
           <p className='body'>
-            We create beautiful ceramic tableware for eateries, from dinner plates to espresso & cappuccino cups. Our
-            hospitality tableware is durable for busy hotels or restaurants.
+            {`     We create beautiful ceramic tableware for eateries, from dinner plates to espresso & cappuccino cups. Our
+            hospitality tableware is durable for busy hotels or restaurants.`}
           </p>
           <p className='body'>
-            Whether you need pieces for a fancy fine dining spot or restaurant crockery in bulk for your chain, let me
-            know. I'll help you find pieces that'll make your guests smile :)
+            {` Whether you need pieces for a fancy fine dining spot or restaurant crockery in bulk for your chain, let me
+            know. I'll help you find pieces that'll make your guests smile :)`}
           </p>
           <button onClick={scrollToForm} className='bg-primary px-5 py-3 text-white'>
             Get in touch

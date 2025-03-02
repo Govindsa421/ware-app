@@ -16,7 +16,7 @@ const Footer = () => {
             <p>Restaurant & café tableware</p>
             <p> Blogs - Our learnings & thoughts</p>
             <p>Return or Exchange your order</p>
-            <p>Events - you don't want to miss </p>
+            <p>{`Events - you don't want to miss `}</p>
             <p>Care & Features </p>
             <p>Care & Features Return, Exchange & Refund Policy</p>
             <p>Shipping Policy </p>

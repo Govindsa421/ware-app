@@ -51,6 +51,7 @@ const CustomerReviews = () => {
   }
 
   // Star Rating Component
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const StarRating = ({ control, name }: { control: any; name: string }) => {
     return (
       <Controller
