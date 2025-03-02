@@ -1,5 +1,5 @@
 'use client'
-import { ArrowLongRightIcon, ArrowRightIcon } from '@heroicons/react/16/solid'
+import { ArrowLongRightIcon } from '@heroicons/react/16/solid'
 import Image from 'next/image'
 import React from 'react'
 
