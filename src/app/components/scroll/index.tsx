@@ -28,7 +28,11 @@ const ScrollToTop = () => {
   return (
     <div className='fixed bottom-8 right-8'>
       {isVisible && (
-        <button onClick={scrollToTop} className=' transition-colors duration-300' aria-label='Scroll to top'>
+        <button
+          onClick={scrollToTop}
+          className=' transition-colors duration-300 cursor-pointer'
+          aria-label='Scroll to top'
+        >
           <CustomIcon icon='circle-up' color='#bf5e35' size={35} />
         </button>
       )}

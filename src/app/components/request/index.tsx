@@ -56,7 +56,7 @@ export default function FormComponent() {
               <Input type='number' register={register('phone')} placeholder='Phone Number' error={errors.phone} />
             </div>
 
-            <button type='submit' className='px-4 py-2 bg-primary text-white'>
+            <button type='submit' className='px-4 py-2 bg-primary text-white cursor-pointer'>
               Send
             </button>
           </div>
