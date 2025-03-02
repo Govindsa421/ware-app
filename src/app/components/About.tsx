@@ -1,4 +1,5 @@
 'use client'
+import { ArrowLongRightIcon, ArrowRightIcon } from '@heroicons/react/16/solid'
 import Image from 'next/image'
 import React from 'react'
 
@@ -31,8 +32,14 @@ export default function About() {
             {` Whether you need pieces for a fancy fine dining spot or restaurant crockery in bulk for your chain, let me
             know. I'll help you find pieces that'll make your guests smile :)`}
           </p>
-          <button onClick={scrollToForm} className='bg-primary px-5 py-3 text-white'>
-            Get in touch
+          <button
+            onClick={scrollToForm}
+            className='bg-primary px-5 py-3 hover:px-7 duration-300 text-white cursor-pointer relative overflow-hidden group'
+          >
+            <span className='relative z-10'>Get in touch</span>
+            <p className='absolute inset-y-0 -right-4 w-8  flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:right-0 transition-all duration-300 ease-linear'>
+              <ArrowLongRightIcon className='h-6 w-6 ml-2 flex items-center justify-center' />
+            </p>
           </button>
         </div>
       </div>

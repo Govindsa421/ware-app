@@ -1,3 +1,4 @@
+import { ArrowLongRightIcon } from '@heroicons/react/16/solid'
 import Image from 'next/image'
 import React from 'react'
 
@@ -17,7 +18,12 @@ export default function BannerComponent() {
             <h1 className='md:text-5xl font-medium text-lg'>Want to see our Ware?</h1>
             <div className='flex md:gap-8 gap-1 flex-col md:flex-row md:items-center md:pt-3 '>
               <p className='md:text-xl text-base'>Come visit our store in Mumbai</p>
-              <button className='md:text-lg text-sm border-2 px-4 py-2 w-40'>Get Directions</button>
+              <button className='border-2 px-5 py-3 w-40 hover:px-7 duration-300 text-white cursor-pointer relative overflow-hidden group'>
+                <span className='relative z-10'>Get Directions</span>
+                <p className='absolute inset-y-0 -right-4 w-8  flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:right-0 transition-all duration-300 ease-linear'>
+                  <ArrowLongRightIcon className='h-6 w-6 ml-2 flex items-center justify-center' />
+                </p>
+              </button>
             </div>
           </div>
         </div>
