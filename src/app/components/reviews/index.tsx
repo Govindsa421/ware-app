@@ -64,7 +64,7 @@ const CustomerReviews = () => {
                 key={star}
                 type='button'
                 onClick={() => field.onChange(star)}
-                className={`text-2xl ${star <= field.value ? 'text-yellow-400' : 'text-gray-300'}`}
+                className={`text-2xl ${star <= field.value ? 'text-[#bf5e35]' : 'text-gray-300'}`}
               >
                 ★
               </button>
@@ -79,10 +79,10 @@ const CustomerReviews = () => {
     <div className='bg-gray-50 py-12 px-7 md:px-8'>
       <div className='max-w-7xl mx-auto'>
         {/* Section Title */}
-        <h2 className='text-3xl font-bold text-center text-gray-900 mb-8'>Customer Reviews</h2>
+        <h2 className='subheading text-center'>Customer Reviews</h2>
 
         {/* Add Review Button */}
-        <div className='flex flex-col md:flex-row justify-center items-center gap-10'>
+        <div className='flex flex-col md:flex-row justify-center items-center md:gap-10 gap-2'>
           <div className='mt-8 px-8'>
             <div
               onClick={() => setIsModalOpen(true)}
@@ -92,29 +92,29 @@ const CustomerReviews = () => {
               <p className='mr-2'>Add Review</p>
             </div>
           </div>
-          <div className=' flex-1 overflow-hidden'>
+          <div className=' flex-1  overflow-hidden'>
             {/* Swiper Carousel */}
             <Swiper
-              modules={[Navigation, Pagination, Autoplay]} // Enable navigation, pagination, and autoplay
-              navigation={true} // Enable navigation arrows
-              pagination={{ clickable: true }} // Enable pagination dots
-              autoplay={{ delay: 3000 }} // Autoplay with a 3-second delay
-              loop={true} // Enable loop only if there are enough slides
-              // spaceBetween={20} // Space between slides
-              slidesPerView={1} // Default number of slides per view
+              modules={[Navigation, Pagination, Autoplay]}
+              navigation={true}
+              pagination={{ clickable: true }}
+              // autoplay={{ delay: 3000 }}
+              loop={true}
+              slidesPerView={1}
               breakpoints={{
                 320: {
                   slidesPerView: 1,
-                  spaceBetween: 10,
                 },
                 480: {
                   slidesPerView: 2,
                 },
                 768: {
                   slidesPerView: 3,
+                  spaceBetween: 20,
                 },
                 1024: {
                   slidesPerView: 3,
+                  spaceBetween: 40,
                 },
               }}
               className='mySwiper'
@@ -127,7 +127,7 @@ const CustomerReviews = () => {
                       {[1, 2, 3, 4, 5].map((star) => (
                         <span
                           key={star}
-                          className={`text-xl ${star <= review.rating ? 'text-yellow-400' : 'text-gray-300'}`}
+                          className={`text-xl ${star <= review.rating ? 'text-[#bf5e35]' : 'text-gray-300'}`}
                         >
                           ★
                         </span>
