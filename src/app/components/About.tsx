@@ -12,7 +12,7 @@ export default function About() {
   }
   return (
     <div className='max-w-7xl mx-auto'>
-      <div className='flex flex-col md:flex-row items-center justify-center gap-20 px-10  md:py-10 py-4 '>
+      <div className='flex flex-col md:flex-row items-center justify-center gap-20 px-10  md:py-10 py-4'>
         <div className=''>
           <Image
             src={'https://www.wareinnovations.com/cdn/shop/files/WO_price_Horeca_Catalog_1.jpg?v=1717245032&width=1080'}
