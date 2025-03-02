@@ -1,24 +1,144 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-primary: 'Montserrat', sans-serif;
+
+  --font-weight-headline: 600;
+  --font-weight-subheading: 500;
+  --font-weight-body: 100;
+
+  --font-size-headline: 36px;
+  --font-size-subheading: 24px;
+  --font-size-body: 16px;
+
+  /* primary  */
+  --brickcolor-primary: #bf5e35;
+  --lightcolor-primary: #fff7f1;
+  --lightgreycolor-primary: #565656;
+
+  /* secondary */
+
+  --greycolor-secondary: #565656;
+  --whitecolor-secondary: #ffffff;
+}
+.font-body {
+  font-family: var(--font-primary);
+}
+.bg-primary {
+  background-color: var(--brickcolor-primary);
+}
+.bg-secondary {
+  background-color: var(--lightcolor-primary);
+}
+
+.text-primary {
+  color: var(--brickcolor-primary);
+}
+
+.headline {
+  font-weight: var(--font-weight-headline);
+  font-size: var(--font-size-headline);
+  color: var(--greycolor-secondary);
+}
+
+.subheading {
+  font-weight: var(--font-weight-subheading);
+  font-size: var(--font-size-subheading);
+  color: var(--greycolor-secondary);
+}
+
+.body {
+  font-weight: var(--font-weight-body);
+  font-size: var(--font-size-body);
+  color: var(---greycolor-secondary);
+}
+/* Carousel Container */
+.carousel-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Hide Scrollbar */
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Carousel Track */
+.carousel-track {
+  display: inline-flex;
+}
+
+/* Carousel Item */
+.carousel-item {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust item width */
+  margin-right: 16px; /* Adjust spacing between items */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.inputField {
+  @apply w-full border border-blue-200  p-2 rounded outline-none;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-primary: 'Montserrat', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* slider css */
+/* 
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.swiper-slide img {
+  display: block;
+  width: 384px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff0000;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px;
+}
+
+.mySwiper {
+  padding: 4rem;
+}
+
+.swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  background-color: #ccc;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff0000;
+} */
